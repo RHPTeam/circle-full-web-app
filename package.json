@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/RHPTeam/circle-full-web-app/issues"
   },
-  "homepage": "https://github.com/RHPTeam/circle-full-web-app#readme"
+  "homepage": "https://github.com/RHPTeam/circle-full-web-app#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  }
 }
