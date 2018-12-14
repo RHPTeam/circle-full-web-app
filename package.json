@@ -1,0 +1,24 @@
+{
+  "name": "circle-full-web-app",
+  "version": "1.0.0",
+  "description": "This is my team prduct test first time. Please not using to develop everything.",
+  "main": "index.js",
+  "scripts": {
+    "test": "update late"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RHPTeam/circle-full-web-app.git"
+  },
+  "keywords": [
+    "node.js",
+    "vuejs",
+    "mongo"
+  ],
+  "author": "RHP Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RHPTeam/circle-full-web-app/issues"
+  },
+  "homepage": "https://github.com/RHPTeam/circle-full-web-app#readme"
+}
