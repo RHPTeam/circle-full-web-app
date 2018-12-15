@@ -6,7 +6,10 @@ import ProductDetail from "@/components/ProductDetail/index";
 import Cart from "@/components/Cart/index";
 import CartInfo from "@/components/CartInfo/index";
 import CartFinish from "@/components/CartFinish/index";
-
+import Login from "@/components/Login/index";
+import Register from "@/components/Register/index";
+import Verification from "@/components/Register/verification";
+import RegisterPassword from "@/components/Register/password";
 Vue.use(Router);
 
 export default new Router({
