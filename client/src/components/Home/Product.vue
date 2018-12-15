@@ -1,8 +1,8 @@
 <template>
 	<div class="productHome">
 		<div class="productHome--tab t_center">
-			<button class="btn bg_red">Đăng Nhập</button>
-			<button class="btn bg_white">Đăng Ký</button>
+			<button class="btn bg_red">Thức Ăn</button>
+			<button class="btn bg_white">Đồ Uống</button>
 		</div>
 		<div class="productHome--item p_10">
 			<div class="product--image">
