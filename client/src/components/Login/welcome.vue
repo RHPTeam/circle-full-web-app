@@ -7,7 +7,7 @@
             <router-link tag="button" class="btn bg_greyish t_bold" :to="{name:'register'}">Đăng ký</router-link>
         </div>
         <div class="link-ignore">
-            <a href="">Bỏ qua bước này</a>
+           <router-link tag="a" :to="{name:'home'}">Bỏ qua bước này</router-link>
         </div>
     </div>
 </template>

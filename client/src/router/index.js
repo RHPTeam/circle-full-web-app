@@ -6,6 +6,7 @@ import ProductDetail from "@/components/ProductDetail/index";
 import Cart from "@/components/Cart/index";
 import CartInfo from "@/components/CartInfo/index";
 import CartFinish from "@/components/CartFinish/index";
+import Welcome from "@/components/Login/welcome";
 import Login from "@/components/Login/index";
 import Register from "@/components/Register/index";
 import Verification from "@/components/Register/verification";
