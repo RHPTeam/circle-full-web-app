@@ -1,17 +1,10 @@
 <template>
-	<div id="app">
-		<router-view />
-		<app-nav />
-	</div>
+	<div id="app"><router-view /></div>
 </template>
 
 <script>
-import AppNav from "@/components/Footer/Navbar";
 export default {
-	name: "App",
-	components: {
-		AppNav
-	}
+	name: "App"
 };
 </script>
 
