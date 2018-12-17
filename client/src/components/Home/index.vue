@@ -1,5 +1,5 @@
 <template>
-	<div class="homepage bg-grey">
+	<div class="homepage bg_grey">
 		<app-header /><app-slide /> <app-hot-deal /> <app-product /> <app-nav />
 	</div>
 </template>
