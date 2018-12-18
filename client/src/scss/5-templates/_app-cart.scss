@@ -154,6 +154,7 @@
             color: #999999;
             &.icon-disable {
                 color: #e1e1e1;
+                pointer-events: none;
             }
         }
         input {
