@@ -14,6 +14,7 @@ import AppMenuBar from "@/components/Product/menubar";
 import AppProducts from "@/components/Product/products";
 import AppModal from "@/components/Product/modal";
 import AppNav from "@/components/Footer/Navbar";
+
 export default {
 	components: {
 		AppHeaderBackground,
@@ -21,6 +22,12 @@ export default {
 		AppProducts,
 		AppModal,
 		AppNav
+	},
+	data:function(){
+		return{
+			p_modal:"Thức ăn",
+			p_cate: "drink",
+		}
 	}
 };
 </script>
