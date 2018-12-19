@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<div class="product--content" v-if="stt_cate">
+		<div class="product--content" 
+		v-if="stt_cate">
 				<div class="card--body"
 					v-for="product in products"
 					v-if = "product.product_modal == modal"
@@ -20,7 +21,9 @@
 					</div>
 				</div>
 		</div>
-		<div v-else class="product--content">
+		<div class="product--content"
+		 v-else
+		 >
 				<div class="card--body"
 					v-for="product in products"
 					v-if = "product.product_cate == cate"
