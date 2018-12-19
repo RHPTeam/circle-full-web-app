@@ -1,9 +1,9 @@
 <template>
 	<div class="product">
 		<app-header-background />
-		<app-menu-bar />
-		<app-products />
-		<app-modal />
+		<app-menu-bar :modal="modal" :tabCate="tabCate" :statusCate="statusCate"/>
+		<app-products :cate="cate"  :modal="modal" :stt_cate="stt_cate"/>
+		<app-modal :modal="modal" :tabModal="tabModal"/>
 		<app-nav />
 	</div>
 </template>
@@ -25,10 +25,28 @@ export default {
 	},
 	data:function(){
 		return{
-			p_modal:"Thức ăn",
-			p_cate: "drink",
+			modal:"Thức ăn",
+			cate: "drink",
+			stt_cate:true,
+		}
+	},
+	computed:{
+		
+	},
+	methods:{
+		tabModal(name){
+			this.modal=name;
+			this.stt_cate=true;
+		},
+		tabCate(name){
+			this.cate=name;
+			this.stt_cate=false;
+		},
+		statusCate(){
+			this.stt_cate=true;
 		}
 	}
+	
 };
 </script>
 

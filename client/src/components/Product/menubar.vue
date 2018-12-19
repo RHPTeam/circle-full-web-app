@@ -2,12 +2,13 @@
      <div class="menuBar">
             <div class="menuBar--list height_full">
                 <div class="list height_full">
-                    <span class="list--item">Tất cả</span>
+                    <span @click="statusCate()" class="list--item">Tất cả</span>
                     <span class="list--item"
-                        v-for="cate in cates"
-                        v-if="cate.cate_modal==modal"
-                        :key="cate.id"
-                    >{{cate.cate_name}}</span>
+                        v-for="item in cates"
+                        v-if="item.cate_modal==modal"
+                        :key="item.id"
+                        @click="tabCate(item.cate_name)"
+                    >{{item.cate_name}}</span>
                     
                 </div>
             </div>
@@ -19,7 +20,7 @@
 </template>
 <script>
      export default{
-        props:['modal'],
+        props:['modal','tabCate','statusCate'],
         data(){
             return {
                 cates:[
@@ -45,12 +46,12 @@
                     },
                     {
                         id:4,
-                        cate_name:"Fropter",
+                        cate_name:"Froster",
                         cate_modal:"Đồ uống",
                     },
                     {
                         id:5,
-                        cate_name:"Coca",
+                        cate_name:"Milk",
                         cate_modal:"Sản phẩm",
                     },
                     {

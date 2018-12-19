@@ -12,18 +12,19 @@
                  <button @click="tabModal(item.name)" class="btn full_width grey t_bold"
                 v-else
                 >{{item.name}}</button>
+              
             </div>
         </div>
-     
+        
     </div>
 </template>
 <script>
    
     export default{
-        props:['p_modal'],
+        props:['modal','tabModal'],
         data(){
             return{           
-                modal:this.p_modal,
+              
                 modals:[
                     {
                         id:0,
@@ -49,25 +50,11 @@
             }
         },
         computed:{
-             status: {
-                get() { return this.itemstatus },
-                set(value) {
-                    this.itemstatus = value;
-                }
-                },
-            checkName(name){
-                if(name==this.modal){
-                    return "bg_red";
-                }else{
-                    return "bg_greyish";
-                }
-            }
+             
+            
         },
         methods:{
-          tabModal(name){
-              this.p_modal=name;
-              this.modal=name;
-          }  
+          
         }
     };
 </script>
